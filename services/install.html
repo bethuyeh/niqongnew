@@ -7,8 +7,24 @@
     <title>Installation Engineering</title>
     <link rel = "icon" href = "../images/LogoIcon.png" type = "image/png" sizes = "16x16">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/aos.css">
     <link rel = "stylesheet" href = "../css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js">
+    
+  
+
+    <!-- animate on scroll -->
+    <link rel = "stylesheet" href = "../css/aos.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+   
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+    
     <!-- font awesome icons -->
     <script src="https://kit.fontawesome.com/4b901f1c12.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" /> -->
@@ -27,16 +43,16 @@
           <ul class="links">
             <li><a href="../index.html">Home</a></li>       
             <li>
-              <a href="#about" class="desktop-link">About</a>
+              <a href="" class="desktop-link">About</a>
               <input type="checkbox" id="show-features">
               <label for="show-features">About</label>
               <ul>
                 <li><a href="../about.html">View About us</a></li>
-                
+                <li><a href="../hse.html">Health, Safety and Environment</a></li>
               </ul>
             </li>
             <li>
-              <a href="../index.html" class="desktop-link">Services</a>
+              <a href="" class="desktop-link">Services</a>
               <input type="checkbox" id="show-services">
               <label for="show-services">Services</label>
               <ul>
@@ -47,11 +63,11 @@
                 <li><a href="risks.html">Risk Management Services</a></li>
                 <li><a href="throughlife.html">Through Life Intergrity Management</a></li>
                 <li><a href="consult.html">Expert Witness and Consultancy</a></li>
-                <li><a href="./services/supportservices.html">Support Services</a></li>
-                <li><a href="./services/otherservices.html">Other Services</a></li>
+                <li><a href="supportservices.html">Support Services</a></li>
+                <li><a href="otherservices.html">Other Services</a></li>
               </ul> 
               </li> 
-                <li><a href="index.html" class="desktop-link">Contact</a>
+                <li><a href="../index.html#contact" class="desktop-link">Contact</a>
                 </li>
               </ul>
   
@@ -68,11 +84,11 @@
      <div class="fpso " id="fpso">
       <div class="fpsoheader1">
         <h1 style="color: white;">Installation <span>Engineering</span></h1>
-        <button class="btn" href="#footer">Contact Us</button>
+        <button class="btn" onclick="scrollToFooter()">Contact Us</button>
       </div>
 
       <div class="installheader">
-        <div class="header-plate">
+        <div class="install-plate">
           <p >
             We provide customized solutions, and installation methodology
              to our clients, ensuring a safe and cost-effective offshore solution 
@@ -85,7 +101,7 @@
     </div> 
 
       <div class="fpso-content2">
-        <div class="fpso-left">
+        <div class="install-left" >
           <p>NIQ is specialty entails the following offshore installation 
             services:</p>
           <div class="fpso-list">
@@ -115,8 +131,8 @@
 
         </div>
 
-        <div class="fpso-right">
-          <img src="../images/mission2.jpg" height="300px" width="500px"/>
+        <div class="fpso-right" >
+          <img src="../images/mission2.jpeg" height="300px" width="500px"/>
         </div>
       </div>
 
@@ -124,7 +140,7 @@
         <h2 style="color: #bf1b1b;">Delivering cost-efficient state-of-the-art solutions to FPSO operations.</h2>
         
         <div class="fpso-mid">
-          <div class="fpso-text">
+          <div class="fpso-text" data-aos = "fade-right">
             <p style="text-align: justify;"> 
               Projects involve activities such as  SURF/Cable lay dynamic analysis, 
               mobilisation and deck-layout 
@@ -137,7 +153,7 @@
             </p>
           </div>
 
-          <div class="fpso-service">
+          <div class="fpso-service" data-aos = "fade-left">
             <h3>Our service is supported by in-house complex process 
               and analyses capability backed by 
               experiences in;</h3>
@@ -170,7 +186,7 @@
           <p >
             We can draw from a range of FPSO systems and life extension projects experiences.
 
-A traditional and robust technical footing in FPSO mooring systems combined with experiences where innovation was essential ensures NIQ marine projects meet economic expectations and technically succeed.
+            A traditional and robust technical footing in FPSO mooring systems combined with experiences where innovation was essential ensures NIQ marine projects meet economic expectations and technically succeed.
           </p>  
         </div>
 
@@ -198,7 +214,7 @@ A traditional and robust technical footing in FPSO mooring systems combined with
       </div>
    
 
-      <div class="bottom-page" style="background-color: maroon;" >
+      <div class="bottom-page" style="background-color: maroon;">
         <div class="container">
         <div class="footer-image">
          <h2 style="color: #fff;">NIQ OIL AND GAS LIMITED</h2>
@@ -221,21 +237,18 @@ A traditional and robust technical footing in FPSO mooring systems combined with
      </span> NIQ Oil and Gas Limited<p class="para-text" style="color: #fff;">All rights reserved.</p>
      </div> 
    </div>  
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 
-    <script>
-      var docWidth = document.documentElement.offsetWidth;
+    <!-- animate on scroll -->
+    <script src = "../js/aos.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" 
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-wOLiP6uL5tNrV1FiutKtAyQGGJ1CWAsqQ6Kp2XZ12/CvZxw8MvNJfdhh0yTwjPIir4SWag2/MHrseR7PRmNtvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>

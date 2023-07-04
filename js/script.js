@@ -54,5 +54,11 @@ $(document).ready(function(){
 
     // slick slider 
     
+
+function scrollToFooter() {
+  var footer = document.getElementById("footer");
+  footer.scrollIntoView({ behavior: "smooth" });
+}
+
   
   
